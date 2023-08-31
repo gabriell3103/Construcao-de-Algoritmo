@@ -1,4 +1,4 @@
-def quadrado(base, altura):
+def quadrado(base: int, altura: int):
     for i in range(altura):
         if i == 0 or i == altura - 1:
             print('* ' * base)
