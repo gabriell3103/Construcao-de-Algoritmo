@@ -4,6 +4,8 @@
 import math
 import random
 
+n_arquivo = 'pi.txt'
+arquivo = open(n_arquivo, 'w')
 
 def gera_coordenadas_aleatorias():
     ''' Gera par de coordenadas aleatórias.'''
@@ -38,6 +40,13 @@ def calcula_pi(n):
 
     erro = math.fabs(pi - math.pi)
 
+    arquivo.write("\nPonto X:")
+    arquivo.write(str(x))
+    arquivo.write("\nPonto Y:")
+    arquivo.write(str(y))
+    arquivo.write("\nCom o Valor de pi sendo: ")
+    arquivo.write(str(pi))
+    
     return pi, erro
 
 
