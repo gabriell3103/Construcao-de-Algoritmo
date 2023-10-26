@@ -13,5 +13,5 @@ def Verifica_primo(num: int):
             return False
         return True
 
-lista_primos = Encontrar_primos(5)
+lista_primos = Encontrar_primos(13)
 print(lista_primos)
