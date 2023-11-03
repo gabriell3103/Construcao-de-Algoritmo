@@ -4,6 +4,16 @@
 # fat(n) -
 #         { n x fat(n-1),  se n é maior que 0
 
+import unittest
+
+def test_fatorial1():
+    assert calcular_fatorial(4) == 24
+    print('OK - 1')
+def test_fatorial2():
+    assert calcular_fatorial(0) == 1
+    print('OK - 2')
+
+
 def calcular_fatorial(num: int):
     if num == 0:
         return 1
@@ -16,3 +26,7 @@ def calcular_fatorial(num: int):
 n = 5
 resultado = calcular_fatorial(n)
 print(f'O fatorial de {n} é {resultado}')
+
+if __name__ == '__main__':
+    test_fatorial1()
+    test_fatorial2()
