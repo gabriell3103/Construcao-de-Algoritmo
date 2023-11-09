@@ -9,6 +9,6 @@ def inteiro_para_binario(numero):
         return inteiro_para_binario(numero // 2) + str(numero % 2)
 
 
-numero = 10
+numero = int(input('Qual numero você deseja transformar em binario: '))
 binario = inteiro_para_binario(numero)
 print(f"A representação binária de {numero} é {binario}")

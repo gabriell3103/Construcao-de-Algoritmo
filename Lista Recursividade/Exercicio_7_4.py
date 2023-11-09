@@ -17,7 +17,7 @@ def test_fatorial2():
 def calcular_fatorial(num: int):
     if num == 0:
         return 1
-    if num > 0:
+    elif num > 0:
         return num * calcular_fatorial(num - 1)
 
     return "Fatorial indefinido para números negativos"

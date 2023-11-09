@@ -2,9 +2,9 @@
 
 import unittest
 
-def contagem_regressiva(n):
-   if n < 0:
-        return 0
+def contagem_regressiva(n: int):
+   if n == 0:
+        print(n)
    else:
         print(n)
         contagem_regressiva(n - 1)
